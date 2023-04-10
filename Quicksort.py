@@ -1,10 +1,3 @@
-import time as t
-#import psutil as p
-
-start_time = t.time()
-#peocess = p.Process()
-#before_memory = p.memory_info().rss
-
 def partition(lista, p):
 	i = 0
 	j = len(lista) - 1
@@ -38,12 +31,5 @@ def pivote(lista):
 n = int(input())
 lista = lista(n)
 p = pivote(lista)
-partition(lista,p)
+print(partition(lista,p))
 
-#after_memory = p.memory_info().rss
-#memory_used = after_memory - before_memory
-
-end_time = t.time()
-duration = end_time - start_time
-
-print(f"\n\ntime: {t.time()}\nmemory: none")
